@@ -131,6 +131,8 @@ abrir.Position = UDim2.new(0.0140845189, 0, 0.602454007, 0)
 abrir.Size = UDim2.new(0, 106, 0, 41)
 abrir.Style = Enum.ButtonStyle.RobloxRoundButton
 abrir.Font = Enum.Font.SourceSans
+abrir.Text = "Abrir"
+abrir.TextScaled = true
 abrir.TextColor3 = Color3.fromRGB(0, 0, 0)
 abrir.TextSize = 14.000
 
