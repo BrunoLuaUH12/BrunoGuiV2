@@ -135,6 +135,7 @@ abrir.Text = "Abrir"
 abrir.TextScaled = true
 abrir.TextColor3 = Color3.fromRGB(0, 0, 0)
 abrir.TextSize = 14.000
+abrir.Draggable = true
 
 -- Scripts:
 
