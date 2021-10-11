@@ -16,7 +16,7 @@ local iy = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local cmd = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local anomic = Instance.new("TextButton")
+local games = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local close = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
@@ -28,6 +28,14 @@ local abrirFrame = Instance.new("Frame")
 local UICorner_10 = Instance.new("UICorner")
 local TextButton = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
+local gamesframe = Instance.new("Frame")
+local ScrollingFrame_2 = Instance.new("ScrollingFrame")
+local anomic = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local closegames = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_14 = Instance.new("UICorner")
 
 --Properties:
 
@@ -51,7 +59,7 @@ ScrollingFrame.Size = UDim2.new(0, 232, 0, 388)
 owl.Name = "owl"
 owl.Parent = ScrollingFrame
 owl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-owl.Position = UDim2.new(0.0616113767, 0, 0.00907927752, 0)
+owl.Position = UDim2.new(0.0616113767, 0, 0.0820881277, 0)
 owl.Size = UDim2.new(0, 93, 0, 46)
 owl.Font = Enum.Font.SciFi
 owl.Text = "OwlHub"
@@ -108,22 +116,22 @@ cmd.TextSize = 14.000
 
 UICorner_5.Parent = cmd
 
-anomic.Name = "anomic"
-anomic.Parent = ScrollingFrame
-anomic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-anomic.Position = UDim2.new(0.0594750941, 0, 0.0831943229, 0)
-anomic.Size = UDim2.new(0, 93, 0, 46)
-anomic.Font = Enum.Font.SciFi
-anomic.Text = "Anomic Gui"
-anomic.TextColor3 = Color3.fromRGB(0, 0, 0)
-anomic.TextSize = 14.000
+games.Name = "games"
+games.Parent = ScrollingFrame
+games.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+games.Position = UDim2.new(0.0594750941, 0, 0.00797307491, 0)
+games.Size = UDim2.new(0, 93, 0, 46)
+games.Font = Enum.Font.SciFi
+games.Text = "Games"
+games.TextColor3 = Color3.fromRGB(0, 0, 0)
+games.TextSize = 14.000
 
-UICorner_6.Parent = anomic
+UICorner_6.Parent = games
 
 close.Name = "close"
 close.Parent = ScrollingFrame
 close.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
-close.Position = UDim2.new(0.655172408, 0, 0.011061959, 0)
+close.Position = UDim2.new(0.577586174, 0, 0.00995576382, 0)
 close.Size = UDim2.new(0, 57, 0, 44)
 close.Font = Enum.Font.SourceSans
 close.Text = "X"
@@ -154,7 +162,7 @@ TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.Position = UDim2.new(0.131535247, 0, 0.0231578946, 0)
 TextLabel.Size = UDim2.new(0, 251, 0, 50)
 TextLabel.Font = Enum.Font.SciFi
-TextLabel.Text = "BrunoGui V2.1"
+TextLabel.Text = "BrunoGui V2.2"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
@@ -187,9 +195,66 @@ TextButton.TextWrapped = true
 
 UICorner_11.Parent = TextButton
 
+gamesframe.Name = "gamesframe"
+gamesframe.Parent = ScreenGui
+gamesframe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+gamesframe.BackgroundTransparency = 0.400
+gamesframe.Position = UDim2.new(0.578587711, 0, 0.290797532, 0)
+gamesframe.Size = UDim2.new(0, 272, 0, 436)
+gamesframe.Visible = false
+
+ScrollingFrame_2.Parent = gamesframe
+ScrollingFrame_2.Active = true
+ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame_2.BackgroundTransparency = 1.000
+ScrollingFrame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame_2.Position = UDim2.new(0.0772058815, 0, 0.16162236, 0)
+ScrollingFrame_2.Size = UDim2.new(0, 236, 0, 339)
+
+anomic.Name = "anomic"
+anomic.Parent = ScrollingFrame_2
+anomic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+anomic.Position = UDim2.new(0.0476463623, 0, 0.00802752376, 0)
+anomic.Size = UDim2.new(0, 96, 0, 44)
+anomic.Font = Enum.Font.SourceSans
+anomic.Text = "Anomic Gui"
+anomic.TextColor3 = Color3.fromRGB(0, 0, 0)
+anomic.TextSize = 14.000
+
+UICorner_12.Parent = anomic
+
+closegames.Name = "closegames"
+closegames.Parent = ScrollingFrame_2
+closegames.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+closegames.Position = UDim2.new(0.663646996, 0, 0.00762159098, 0)
+closegames.Size = UDim2.new(0, 57, 0, 44)
+closegames.Font = Enum.Font.SourceSans
+closegames.Text = "X"
+closegames.TextColor3 = Color3.fromRGB(0, 0, 0)
+closegames.TextScaled = true
+closegames.TextSize = 14.000
+closegames.TextWrapped = true
+
+UICorner_13.CornerRadius = UDim.new(0, 10)
+UICorner_13.Parent = closegames
+
+TextLabel_2.Parent = gamesframe
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Size = UDim2.new(0, 272, 0, 60)
+TextLabel_2.Font = Enum.Font.SciFi
+TextLabel_2.Text = "Games"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UICorner_14.CornerRadius = UDim.new(0, 20)
+UICorner_14.Parent = gamesframe
+
 -- Scripts:
 
-local function RNOYEVW_fake_script() -- Frame.LocalScript 
+local function CWTW_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -232,8 +297,8 @@ local function RNOYEVW_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RNOYEVW_fake_script)()
-local function NQVO_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(CWTW_fake_script)()
+local function RIJFZ_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	
@@ -245,6 +310,18 @@ local function NQVO_fake_script() -- ScreenGui.LocalScript
 	script.Parent.Frame.ScrollingFrame.close.MouseButton1Click:Connect(function()
 		script.Parent.abrirFrame.Visible = true
 		script.Parent.Frame.Visible = false
+	end)
+	
+	script.Parent.Frame.ScrollingFrame.games.MouseButton1Click:Connect(function()
+		script.Parent.gamesframe.Visible = true
+	end)
+	
+	script.Parent.gamesframe.ScrollingFrame.closegames.MouseButton1Click:Connect(function()
+		script.Parent.gamesframe.Visible = false
+	end)
+	
+	script.Parent.gamesframe.ScrollingFrame.anomic.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Genokoe/AnomicMain/main/loader"))()
 	end)
 	
 	script.Parent.Frame.ScrollingFrame.ez.MouseButton1Click:Connect(function()
@@ -267,10 +344,6 @@ local function NQVO_fake_script() -- ScreenGui.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 	
-	script.Parent.Frame.ScrollingFrame.anomic.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Genokoe/AnomicMain/main/loader"))()
-	end)
-	
 	script.Parent.Frame.ScrollingFrame.owl.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 	end)
@@ -280,8 +353,8 @@ local function NQVO_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(NQVO_fake_script)()
-local function OJQFUF_fake_script() -- abrirFrame.LocalScript 
+coroutine.wrap(RIJFZ_fake_script)()
+local function OYOCSYS_fake_script() -- abrirFrame.LocalScript 
 	local script = Instance.new('LocalScript', abrirFrame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -324,4 +397,48 @@ local function OJQFUF_fake_script() -- abrirFrame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(OJQFUF_fake_script)()
+coroutine.wrap(OYOCSYS_fake_script)()
+local function XAZDTWH_fake_script() -- gamesframe.LocalScript 
+	local script = Instance.new('LocalScript', gamesframe)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(XAZDTWH_fake_script)()
