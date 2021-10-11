@@ -39,9 +39,11 @@ local speedsimulator = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
 local HEROSinifinity = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
-local TextLabel_2 = Instance.new("TextLabel")
+local IronManBattlegrounds = Instance.new("TextButton")
 local UICorner_16 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
 local UICorner_17 = Instance.new("UICorner")
+local UICorner_18 = Instance.new("UICorner")
 
 --Properties:
 
@@ -279,6 +281,20 @@ HEROSinifinity.TextWrapped = true
 
 UICorner_15.Parent = HEROSinifinity
 
+IronManBattlegrounds.Name = "IronManBattlegrounds"
+IronManBattlegrounds.Parent = ScrollingFrame_2
+IronManBattlegrounds.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IronManBattlegrounds.Position = UDim2.new(0.508079767, 0, 0.0883389413, 0)
+IronManBattlegrounds.Size = UDim2.new(0, 93, 0, 46)
+IronManBattlegrounds.Font = Enum.Font.SciFi
+IronManBattlegrounds.Text = "Iron Man: Battlegrounds"
+IronManBattlegrounds.TextColor3 = Color3.fromRGB(0, 0, 0)
+IronManBattlegrounds.TextScaled = true
+IronManBattlegrounds.TextSize = 14.000
+IronManBattlegrounds.TextWrapped = true
+
+UICorner_16.Parent = IronManBattlegrounds
+
 TextLabel_2.Parent = gamesframe
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
@@ -290,15 +306,15 @@ TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
-UICorner_16.CornerRadius = UDim.new(0, 20)
-UICorner_16.Parent = gamesframe
+UICorner_17.CornerRadius = UDim.new(0, 20)
+UICorner_17.Parent = gamesframe
 
-UICorner_17.CornerRadius = UDim.new(0, 50)
-UICorner_17.Parent = FundoGames
+UICorner_18.CornerRadius = UDim.new(0, 50)
+UICorner_18.Parent = FundoGames
 
 -- Scripts:
 
-local function VWCJKLA_fake_script() -- abrirFrame.LocalScript 
+local function HILBDV_fake_script() -- abrirFrame.LocalScript 
 	local script = Instance.new('LocalScript', abrirFrame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -341,8 +357,8 @@ local function VWCJKLA_fake_script() -- abrirFrame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(VWCJKLA_fake_script)()
-local function VKLM_fake_script() -- BrunoGuiV2.LocalScript 
+coroutine.wrap(HILBDV_fake_script)()
+local function CMQOBQ_fake_script() -- BrunoGuiV2.LocalScript 
 	local script = Instance.new('LocalScript', BrunoGuiV2)
 
 	-- Open and Close Principal
@@ -377,6 +393,10 @@ local function VKLM_fake_script() -- BrunoGuiV2.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/BrunoLuaUH12/Scripts/main/HEROS%3A%20Infinity.lua'))()
 	end)
 	
+	script.Parent.FundoGames.gamesframe.ScrollingFrame.IronManBattlegrounds.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BrunoLuaUH12/Scripts/main/Iron%20Man%3A%20Battlegrounds.lua'))()
+	end)
+	
 	-- Scripts
 	
 	script.Parent.Fundo.Frame.ScrollingFrame.cmd.MouseButton1Click:Connect(function()
@@ -403,8 +423,8 @@ local function VKLM_fake_script() -- BrunoGuiV2.LocalScript
 		loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
 	end)
 end
-coroutine.wrap(VKLM_fake_script)()
-local function VAENK_fake_script() -- Fundo.LocalScript 
+coroutine.wrap(CMQOBQ_fake_script)()
+local function WKBO_fake_script() -- Fundo.LocalScript 
 	local script = Instance.new('LocalScript', Fundo)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -447,8 +467,8 @@ local function VAENK_fake_script() -- Fundo.LocalScript
 		end
 	end)
 end
-coroutine.wrap(VAENK_fake_script)()
-local function YBPW_fake_script() -- FundoGames.LocalScript 
+coroutine.wrap(WKBO_fake_script)()
+local function IKAK_fake_script() -- FundoGames.LocalScript 
 	local script = Instance.new('LocalScript', FundoGames)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -491,4 +511,4 @@ local function YBPW_fake_script() -- FundoGames.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YBPW_fake_script)()
+coroutine.wrap(IKAK_fake_script)()
