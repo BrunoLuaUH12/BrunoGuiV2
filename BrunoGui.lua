@@ -3,7 +3,7 @@
 
 -- Instances:
 
-local ScreenGui = Instance.new("ScreenGui")
+local BrunoGuiV2 = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local owl = Instance.new("TextButton")
@@ -34,14 +34,17 @@ local closegames = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
 local speedsimulator = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
-local TextLabel_2 = Instance.new("TextLabel")
+local HEROSinifinity = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_15 = Instance.new("UICorner")
 
 --Properties:
 
-ScreenGui.Parent = game.CoreGui
+BrunoGuiV2.Name = "BrunoGuiV2"
+BrunoGuiV2.Parent = game.CoreGui
 
-Frame.Parent = ScreenGui
+Frame.Parent = BrunoGuiV2
 Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BackgroundTransparency = 0.400
 Frame.Position = UDim2.new(0.236902043, 0, 0.290797532, 0)
@@ -172,7 +175,7 @@ UICorner_9.CornerRadius = UDim.new(0, 20)
 UICorner_9.Parent = Frame
 
 abrirFrame.Name = "abrirFrame"
-abrirFrame.Parent = ScreenGui
+abrirFrame.Parent = BrunoGuiV2
 abrirFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 abrirFrame.BackgroundTransparency = 0.400
 abrirFrame.Position = UDim2.new(0.102189071, 0, 0.741104305, 0)
@@ -197,7 +200,7 @@ abrir.TextWrapped = true
 UICorner_11.Parent = abrir
 
 gamesframe.Name = "gamesframe"
-gamesframe.Parent = ScreenGui
+gamesframe.Parent = BrunoGuiV2
 gamesframe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 gamesframe.BackgroundTransparency = 0.400
 gamesframe.Position = UDim2.new(0.578587711, 0, 0.290797532, 0)
@@ -241,6 +244,20 @@ speedsimulator.TextWrapped = true
 
 UICorner_13.Parent = speedsimulator
 
+HEROSinifinity.Name = "HEROSinifinity"
+HEROSinifinity.Parent = ScrollingFrame_2
+HEROSinifinity.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HEROSinifinity.Position = UDim2.new(0.0250289142, 0, 0.0883389413, 0)
+HEROSinifinity.Size = UDim2.new(0, 93, 0, 46)
+HEROSinifinity.Font = Enum.Font.SciFi
+HEROSinifinity.Text = "HEROES: Infinite"
+HEROSinifinity.TextColor3 = Color3.fromRGB(0, 0, 0)
+HEROSinifinity.TextScaled = true
+HEROSinifinity.TextSize = 14.000
+HEROSinifinity.TextWrapped = true
+
+UICorner_14.Parent = HEROSinifinity
+
 TextLabel_2.Parent = gamesframe
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
@@ -252,12 +269,12 @@ TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
-UICorner_14.CornerRadius = UDim.new(0, 20)
-UICorner_14.Parent = gamesframe
+UICorner_15.CornerRadius = UDim.new(0, 20)
+UICorner_15.Parent = gamesframe
 
 -- Scripts:
 
-local function JSZKHT_fake_script() -- Frame.LocalScript 
+local function ILJHS_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -300,8 +317,8 @@ local function JSZKHT_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(JSZKHT_fake_script)()
-local function EMUYE_fake_script() -- abrirFrame.LocalScript 
+coroutine.wrap(ILJHS_fake_script)()
+local function AZEWRJU_fake_script() -- abrirFrame.LocalScript 
 	local script = Instance.new('LocalScript', abrirFrame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -344,8 +361,8 @@ local function EMUYE_fake_script() -- abrirFrame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(EMUYE_fake_script)()
-local function ILNTILS_fake_script() -- gamesframe.LocalScript 
+coroutine.wrap(AZEWRJU_fake_script)()
+local function ITYGCDJ_fake_script() -- gamesframe.LocalScript 
 	local script = Instance.new('LocalScript', gamesframe)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -388,9 +405,9 @@ local function ILNTILS_fake_script() -- gamesframe.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ILNTILS_fake_script)()
-local function LSGRZ_fake_script() -- ScreenGui.LocalScript 
-	local script = Instance.new('LocalScript', ScreenGui)
+coroutine.wrap(ITYGCDJ_fake_script)()
+local function MKEWIM_fake_script() -- BrunoGuiV2.LocalScript 
+	local script = Instance.new('LocalScript', BrunoGuiV2)
 
 	-- Open and Close Principal
 	
@@ -420,6 +437,10 @@ local function LSGRZ_fake_script() -- ScreenGui.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/BrunoLuaUH12/Scripts/main/Speed%20Simulator.lua'))()
 	end)
 	
+	script.Parent.gamesframe.ScrollingFrame.HEROSinifinity.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BrunoLuaUH12/Scripts/main/HEROS%3A%20Infinity.lua'))()
+	end)
+	
 	-- Scripts
 	
 	script.Parent.Frame.ScrollingFrame.cmd.MouseButton1Click:Connect(function()
@@ -446,4 +467,4 @@ local function LSGRZ_fake_script() -- ScreenGui.LocalScript
 		loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
 	end)
 end
-coroutine.wrap(LSGRZ_fake_script)()
+coroutine.wrap(MKEWIM_fake_script)()
