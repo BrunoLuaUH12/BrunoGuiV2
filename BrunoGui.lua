@@ -34,10 +34,8 @@ local closegames = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
 local speedsimulator = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
-local PetClicksSimulator = Instance.new("TextButton")
-local UICorner_14 = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
-local UICorner_15 = Instance.new("UICorner")
+local UICorner_14 = Instance.new("UICorner")
 
 --Properties:
 
@@ -243,20 +241,6 @@ speedsimulator.TextWrapped = true
 
 UICorner_13.Parent = speedsimulator
 
-PetClicksSimulator.Name = "PetClicksSimulator"
-PetClicksSimulator.Parent = ScrollingFrame_2
-PetClicksSimulator.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PetClicksSimulator.Position = UDim2.new(0.0250289142, 0, 0.0883389413, 0)
-PetClicksSimulator.Size = UDim2.new(0, 93, 0, 46)
-PetClicksSimulator.Font = Enum.Font.SciFi
-PetClicksSimulator.Text = "Pet Clicks Simulator!"
-PetClicksSimulator.TextColor3 = Color3.fromRGB(0, 0, 0)
-PetClicksSimulator.TextScaled = true
-PetClicksSimulator.TextSize = 14.000
-PetClicksSimulator.TextWrapped = true
-
-UICorner_14.Parent = PetClicksSimulator
-
 TextLabel_2.Parent = gamesframe
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
@@ -268,12 +252,12 @@ TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
-UICorner_15.CornerRadius = UDim.new(0, 20)
-UICorner_15.Parent = gamesframe
+UICorner_14.CornerRadius = UDim.new(0, 20)
+UICorner_14.Parent = gamesframe
 
 -- Scripts:
 
-local function DTFIXW_fake_script() -- Frame.LocalScript 
+local function JSZKHT_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -316,8 +300,8 @@ local function DTFIXW_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(DTFIXW_fake_script)()
-local function YJOYS_fake_script() -- abrirFrame.LocalScript 
+coroutine.wrap(JSZKHT_fake_script)()
+local function EMUYE_fake_script() -- abrirFrame.LocalScript 
 	local script = Instance.new('LocalScript', abrirFrame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -360,8 +344,8 @@ local function YJOYS_fake_script() -- abrirFrame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YJOYS_fake_script)()
-local function IMCCAN_fake_script() -- gamesframe.LocalScript 
+coroutine.wrap(EMUYE_fake_script)()
+local function ILNTILS_fake_script() -- gamesframe.LocalScript 
 	local script = Instance.new('LocalScript', gamesframe)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -404,8 +388,8 @@ local function IMCCAN_fake_script() -- gamesframe.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IMCCAN_fake_script)()
-local function XSNJNRQ_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(ILNTILS_fake_script)()
+local function LSGRZ_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	-- Open and Close Principal
@@ -436,10 +420,6 @@ local function XSNJNRQ_fake_script() -- ScreenGui.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/BrunoLuaUH12/Scripts/main/Speed%20Simulator.lua'))()
 	end)
 	
-	script.Parent.gamesframe.ScrollingFrame.PetClicksSimulator.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/BrunoLuaUH12/Scripts/main/Pet%20Clicks%20Simulator.lua'))()
-	end)
-	
 	-- Scripts
 	
 	script.Parent.Frame.ScrollingFrame.cmd.MouseButton1Click:Connect(function()
@@ -466,4 +446,4 @@ local function XSNJNRQ_fake_script() -- ScreenGui.LocalScript
 		loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
 	end)
 end
-coroutine.wrap(XSNJNRQ_fake_script)()
+coroutine.wrap(LSGRZ_fake_script)()
