@@ -424,7 +424,7 @@ local function SFVLTDF_fake_script() -- ScreenGui.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
 	end)
 	
-	script.Parent.Frame.ScrollingFrame.ez.MouseButton1Click:Connect(function()
+	script.Parent.Frame.ScrollingFrame.dex.MouseButton1Click:Connect(function()
 		loadstring(game:GetObjects("rbxassetid://418957341")[1].Source)()
 	end)
 	
