@@ -437,7 +437,7 @@ local function XSNJNRQ_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 	script.Parent.gamesframe.ScrollingFrame.PetClicksSimulator.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/BrunoLuaUH12/Scripts/main/Pet%20Clicks%20Simulator.lua", true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/BrunoLuaUH12/Scripts/main/Pet%20Clicks%20Simulator.lua"))()
 	end)
 	
 	-- Scripts
