@@ -30,9 +30,9 @@ local abrir = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
 local gamesframe = Instance.new("Frame")
 local ScrollingFrame_2 = Instance.new("ScrollingFrame")
-local anomic = Instance.new("TextButton")
-local UICorner_12 = Instance.new("UICorner")
 local closegames = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local speedsimulator = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
 local UICorner_14 = Instance.new("UICorner")
@@ -162,7 +162,7 @@ TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.Position = UDim2.new(0.131535247, 0, 0.0231578946, 0)
 TextLabel.Size = UDim2.new(0, 251, 0, 50)
 TextLabel.Font = Enum.Font.SciFi
-TextLabel.Text = "BrunoGui V2.1"
+TextLabel.Text = "BrunoGui V2.2"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
@@ -175,7 +175,7 @@ abrirFrame.Name = "abrirFrame"
 abrirFrame.Parent = ScreenGui
 abrirFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 abrirFrame.BackgroundTransparency = 0.400
-abrirFrame.Position = UDim2.new(0.0242976453, 0, 0.760736167, 0)
+abrirFrame.Position = UDim2.new(0.102189071, 0, 0.741104305, 0)
 abrirFrame.Size = UDim2.new(0, 114, 0, 62)
 
 UICorner_10.Parent = abrirFrame
@@ -212,18 +212,6 @@ ScrollingFrame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame_2.Position = UDim2.new(0.0772058815, 0, 0.16162236, 0)
 ScrollingFrame_2.Size = UDim2.new(0, 236, 0, 339)
 
-anomic.Name = "anomic"
-anomic.Parent = ScrollingFrame_2
-anomic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-anomic.Position = UDim2.new(0.0476463623, 0, 0.00802752376, 0)
-anomic.Size = UDim2.new(0, 96, 0, 44)
-anomic.Font = Enum.Font.SourceSans
-anomic.Text = "Anomic Gui"
-anomic.TextColor3 = Color3.fromRGB(0, 0, 0)
-anomic.TextSize = 14.000
-
-UICorner_12.Parent = anomic
-
 closegames.Name = "closegames"
 closegames.Parent = ScrollingFrame_2
 closegames.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
@@ -236,8 +224,22 @@ closegames.TextScaled = true
 closegames.TextSize = 14.000
 closegames.TextWrapped = true
 
-UICorner_13.CornerRadius = UDim.new(0, 10)
-UICorner_13.Parent = closegames
+UICorner_12.CornerRadius = UDim.new(0, 10)
+UICorner_12.Parent = closegames
+
+speedsimulator.Name = "speedsimulator"
+speedsimulator.Parent = ScrollingFrame_2
+speedsimulator.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+speedsimulator.Position = UDim2.new(0.0250289142, 0, 0.00691692531, 0)
+speedsimulator.Size = UDim2.new(0, 93, 0, 46)
+speedsimulator.Font = Enum.Font.SciFi
+speedsimulator.Text = "Speed Simulator ⚡"
+speedsimulator.TextColor3 = Color3.fromRGB(0, 0, 0)
+speedsimulator.TextScaled = true
+speedsimulator.TextSize = 14.000
+speedsimulator.TextWrapped = true
+
+UICorner_13.Parent = speedsimulator
 
 TextLabel_2.Parent = gamesframe
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -255,7 +257,7 @@ UICorner_14.Parent = gamesframe
 
 -- Scripts:
 
-local function WLWPYWZ_fake_script() -- Frame.LocalScript 
+local function SISGCT_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -298,8 +300,8 @@ local function WLWPYWZ_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(WLWPYWZ_fake_script)()
-local function HLFBY_fake_script() -- abrirFrame.LocalScript 
+coroutine.wrap(SISGCT_fake_script)()
+local function AWVYMM_fake_script() -- abrirFrame.LocalScript 
 	local script = Instance.new('LocalScript', abrirFrame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -342,8 +344,8 @@ local function HLFBY_fake_script() -- abrirFrame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(HLFBY_fake_script)()
-local function APGJ_fake_script() -- gamesframe.LocalScript 
+coroutine.wrap(AWVYMM_fake_script)()
+local function TTEV_fake_script() -- gamesframe.LocalScript 
 	local script = Instance.new('LocalScript', gamesframe)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -386,8 +388,8 @@ local function APGJ_fake_script() -- gamesframe.LocalScript
 		end
 	end)
 end
-coroutine.wrap(APGJ_fake_script)()
-local function SFVLTDF_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(TTEV_fake_script)()
+local function TBWKS_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	-- Open and Close Principal
@@ -414,8 +416,8 @@ local function SFVLTDF_fake_script() -- ScreenGui.LocalScript
 	
 	-- Games Scripts
 	
-	script.Parent.gamesframe.ScrollingFrame.anomic.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Genokoe/AnomicMain/main/loader"))()
+	script.Parent.gamesframe.ScrollingFrame.speedsimulator.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://github.com/BrunoLuaUH12/Scripts/blob/main/Speed%20Simulator.lua'))()
 	end)
 	
 	-- Scripts
@@ -444,4 +446,4 @@ local function SFVLTDF_fake_script() -- ScreenGui.LocalScript
 		loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
 	end)
 end
-coroutine.wrap(SFVLTDF_fake_script)()
+coroutine.wrap(TBWKS_fake_script)()
