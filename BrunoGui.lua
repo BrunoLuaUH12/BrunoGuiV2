@@ -255,72 +255,7 @@ UICorner_14.Parent = gamesframe
 
 -- Scripts:
 
-local function CSNC_fake_script() -- owl.LocalScript 
-	local script = Instance.new('LocalScript', owl)
-
-	script.Parent.Frame.ScrollingFrame.owl.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
-	end)
-end
-coroutine.wrap(CSNC_fake_script)()
-local function SUXKQAH_fake_script() -- spy.LocalScript 
-	local script = Instance.new('LocalScript', spy)
-
-	script.Parent.Frame.ScrollingFrame.spy.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
-	end)
-end
-coroutine.wrap(SUXKQAH_fake_script)()
-local function OHEMQ_fake_script() -- ez.LocalScript 
-	local script = Instance.new('LocalScript', ez)
-
-	script.Parent.Frame.ScrollingFrame.ez.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
-	end)
-end
-coroutine.wrap(OHEMQ_fake_script)()
-local function FZABTEO_fake_script() -- iy.LocalScript 
-	local script = Instance.new('LocalScript', iy)
-
-	script.Parent.Frame.ScrollingFrame.iy.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-	end)
-end
-coroutine.wrap(FZABTEO_fake_script)()
-local function MFVMF_fake_script() -- cmd.LocalScript 
-	local script = Instance.new('LocalScript', cmd)
-
-	script.Parent.Frame.ScrollingFrame.cmd.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
-	end)
-end
-coroutine.wrap(MFVMF_fake_script)()
-local function FHPY_fake_script() -- games.LocalScript 
-	local script = Instance.new('LocalScript', games)
-
-	script.Parent.Frame.ScrollingFrame.games.MouseButton1Click:Connect(function()
-		script.Parent.gamesframe.Visible = true
-	end)
-end
-coroutine.wrap(FHPY_fake_script)()
-local function YWWIGUW_fake_script() -- close.LocalScript 
-	local script = Instance.new('LocalScript', close)
-
-	script.Parent.Frame.ScrollingFrame.close.MouseButton1Click:Connect(function()
-		script.Parent.abrirFrame.Visible = true
-		script.Parent.Frame.Visible = false
-	end)
-end
-coroutine.wrap(YWWIGUW_fake_script)()
-local function HHEWD_fake_script() -- dex.LocalScript 
-	local script = Instance.new('LocalScript', dex)
-
-	script.Parent.Frame.ScrollingFrame.dex.MouseButton1Click:Connect(function()
-		loadstring(game:GetObjects("rbxassetid://418957341")[1].Source)()
-	end)
-end
-coroutine.wrap(HHEWD_fake_script)()
-local function MCGQP_fake_script() -- Frame.LocalScript 
+local function WLWPYWZ_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -363,8 +298,8 @@ local function MCGQP_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MCGQP_fake_script)()
-local function FAAXH_fake_script() -- abrirFrame.LocalScript 
+coroutine.wrap(WLWPYWZ_fake_script)()
+local function HLFBY_fake_script() -- abrirFrame.LocalScript 
 	local script = Instance.new('LocalScript', abrirFrame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -407,33 +342,8 @@ local function FAAXH_fake_script() -- abrirFrame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FAAXH_fake_script)()
-local function HVES_fake_script() -- abrir.LocalScript 
-	local script = Instance.new('LocalScript', abrir)
-
-	script.Parent.abrirFrame.abrir.MouseButton1Click:Connect(function()
-		script.Parent.abrirFrame.Visible = false
-		script.Parent.Frame.Visible = true
-	end)
-end
-coroutine.wrap(HVES_fake_script)()
-local function NMAX_fake_script() -- anomic.LocalScript 
-	local script = Instance.new('LocalScript', anomic)
-
-	script.Parent.gamesframe.ScrollingFrame.anomic.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Genokoe/AnomicMain/main/loader"))()
-	end)
-end
-coroutine.wrap(NMAX_fake_script)()
-local function GWGL_fake_script() -- closegames.LocalScript 
-	local script = Instance.new('LocalScript', closegames)
-
-	script.Parent.gamesframe.ScrollingFrame.closegames.MouseButton1Click:Connect(function()
-		script.Parent.gamesframe.Visible = false
-	end)
-end
-coroutine.wrap(GWGL_fake_script)()
-local function RCBZ_fake_script() -- gamesframe.LocalScript 
+coroutine.wrap(HLFBY_fake_script)()
+local function APGJ_fake_script() -- gamesframe.LocalScript 
 	local script = Instance.new('LocalScript', gamesframe)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -476,4 +386,62 @@ local function RCBZ_fake_script() -- gamesframe.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RCBZ_fake_script)()
+coroutine.wrap(APGJ_fake_script)()
+local function SFVLTDF_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	-- Open and Close Principal
+	
+	script.Parent.abrirFrame.abrir.MouseButton1Click:Connect(function()
+		script.Parent.abrirFrame.Visible = false
+		script.Parent.Frame.Visible = true
+	end)
+	
+	script.Parent.Frame.ScrollingFrame.close.MouseButton1Click:Connect(function()
+		script.Parent.abrirFrame.Visible = true
+		script.Parent.Frame.Visible = false
+	end)
+	
+	-- Open and Close Games Gui
+	
+	script.Parent.Frame.ScrollingFrame.games.MouseButton1Click:Connect(function()
+		script.Parent.gamesframe.Visible = true
+	end)
+	
+	script.Parent.gamesframe.ScrollingFrame.closegames.MouseButton1Click:Connect(function()
+		script.Parent.gamesframe.Visible = false
+	end)
+	
+	-- Games Scripts
+	
+	script.Parent.gamesframe.ScrollingFrame.anomic.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Genokoe/AnomicMain/main/loader"))()
+	end)
+	
+	-- Scripts
+	
+	script.Parent.Frame.ScrollingFrame.cmd.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+	end)
+	
+	script.Parent.Frame.ScrollingFrame.cmd.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+	end)
+	
+	script.Parent.Frame.ScrollingFrame.ez.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+	end)
+	
+	script.Parent.Frame.ScrollingFrame.iy.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+	
+	script.Parent.Frame.ScrollingFrame.owl.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+	end)
+	
+	script.Parent.Frame.ScrollingFrame.spy.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
+	end)
+end
+coroutine.wrap(SFVLTDF_fake_script)()
