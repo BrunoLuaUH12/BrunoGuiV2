@@ -257,7 +257,7 @@ UICorner_14.Parent = gamesframe
 
 -- Scripts:
 
-local function SISGCT_fake_script() -- Frame.LocalScript 
+local function QGUYDXN_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -300,8 +300,8 @@ local function SISGCT_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SISGCT_fake_script)()
-local function AWVYMM_fake_script() -- abrirFrame.LocalScript 
+coroutine.wrap(QGUYDXN_fake_script)()
+local function OYKPDLJ_fake_script() -- abrirFrame.LocalScript 
 	local script = Instance.new('LocalScript', abrirFrame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -344,8 +344,8 @@ local function AWVYMM_fake_script() -- abrirFrame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(AWVYMM_fake_script)()
-local function TTEV_fake_script() -- gamesframe.LocalScript 
+coroutine.wrap(OYKPDLJ_fake_script)()
+local function RKHFQHH_fake_script() -- gamesframe.LocalScript 
 	local script = Instance.new('LocalScript', gamesframe)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -388,8 +388,8 @@ local function TTEV_fake_script() -- gamesframe.LocalScript
 		end
 	end)
 end
-coroutine.wrap(TTEV_fake_script)()
-local function TBWKS_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(RKHFQHH_fake_script)()
+local function RSFIFU_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	-- Open and Close Principal
@@ -417,7 +417,7 @@ local function TBWKS_fake_script() -- ScreenGui.LocalScript
 	-- Games Scripts
 	
 	script.Parent.gamesframe.ScrollingFrame.speedsimulator.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://github.com/BrunoLuaUH12/Scripts/blob/main/Speed%20Simulator.lua'))()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BrunoLuaUH12/Scripts/main/Speed%20Simulator.lua'))()
 	end)
 	
 	-- Scripts
@@ -446,4 +446,4 @@ local function TBWKS_fake_script() -- ScreenGui.LocalScript
 		loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
 	end)
 end
-coroutine.wrap(TBWKS_fake_script)()
+coroutine.wrap(RSFIFU_fake_script)()
