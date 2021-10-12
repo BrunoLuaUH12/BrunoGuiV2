@@ -41,9 +41,11 @@ local HEROSinifinity = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
 local IronManBattlegrounds = Instance.new("TextButton")
 local UICorner_16 = Instance.new("UICorner")
-local TextLabel_2 = Instance.new("TextLabel")
+local RaysMod = Instance.new("TextButton")
 local UICorner_17 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
 local UICorner_18 = Instance.new("UICorner")
+local UICorner_19 = Instance.new("UICorner")
 
 --Properties:
 
@@ -184,7 +186,7 @@ close.TextScaled = true
 close.TextSize = 14.000
 close.TextWrapped = true
 
-UICorner_10.CornerRadius = UDim.new(0, 10)
+UICorner_10.CornerRadius = UDim.new(0, 15)
 UICorner_10.Parent = close
 
 dex.Name = "dex"
@@ -250,7 +252,7 @@ closegames.TextScaled = true
 closegames.TextSize = 14.000
 closegames.TextWrapped = true
 
-UICorner_13.CornerRadius = UDim.new(0, 10)
+UICorner_13.CornerRadius = UDim.new(0, 15)
 UICorner_13.Parent = closegames
 
 speedsimulator.Name = "speedsimulator"
@@ -295,6 +297,20 @@ IronManBattlegrounds.TextWrapped = true
 
 UICorner_16.Parent = IronManBattlegrounds
 
+RaysMod.Name = "RaysMod"
+RaysMod.Parent = ScrollingFrame_2
+RaysMod.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RaysMod.Position = UDim2.new(0.0250289142, 0, 0.164027005, 0)
+RaysMod.Size = UDim2.new(0, 93, 0, 46)
+RaysMod.Font = Enum.Font.SciFi
+RaysMod.Text = "Ray's Mod"
+RaysMod.TextColor3 = Color3.fromRGB(0, 0, 0)
+RaysMod.TextScaled = true
+RaysMod.TextSize = 14.000
+RaysMod.TextWrapped = true
+
+UICorner_17.Parent = RaysMod
+
 TextLabel_2.Parent = gamesframe
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
@@ -306,15 +322,15 @@ TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
-UICorner_17.CornerRadius = UDim.new(0, 20)
-UICorner_17.Parent = gamesframe
+UICorner_18.CornerRadius = UDim.new(0, 20)
+UICorner_18.Parent = gamesframe
 
-UICorner_18.CornerRadius = UDim.new(0, 50)
-UICorner_18.Parent = FundoGames
+UICorner_19.CornerRadius = UDim.new(0, 50)
+UICorner_19.Parent = FundoGames
 
 -- Scripts:
 
-local function HILBDV_fake_script() -- abrirFrame.LocalScript 
+local function YOGKNA_fake_script() -- abrirFrame.LocalScript 
 	local script = Instance.new('LocalScript', abrirFrame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -357,8 +373,8 @@ local function HILBDV_fake_script() -- abrirFrame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(HILBDV_fake_script)()
-local function CMQOBQ_fake_script() -- BrunoGuiV2.LocalScript 
+coroutine.wrap(YOGKNA_fake_script)()
+local function KVKDILG_fake_script() -- BrunoGuiV2.LocalScript 
 	local script = Instance.new('LocalScript', BrunoGuiV2)
 
 	-- Open and Close Principal
@@ -397,6 +413,10 @@ local function CMQOBQ_fake_script() -- BrunoGuiV2.LocalScript
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/BrunoLuaUH12/Scripts/main/Iron%20Man%3A%20Battlegrounds.lua'))()
 	end)
 	
+	script.Parent.FundoGames.gamesframe.ScrollingFrame.RaysMod.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BrunoLuaUH12/Scripts/main/Rays%20Mod.lua'))()
+	end)
+	
 	-- Scripts
 	
 	script.Parent.Fundo.Frame.ScrollingFrame.cmd.MouseButton1Click:Connect(function()
@@ -423,8 +443,8 @@ local function CMQOBQ_fake_script() -- BrunoGuiV2.LocalScript
 		loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
 	end)
 end
-coroutine.wrap(CMQOBQ_fake_script)()
-local function WKBO_fake_script() -- Fundo.LocalScript 
+coroutine.wrap(KVKDILG_fake_script)()
+local function OZQDS_fake_script() -- Fundo.LocalScript 
 	local script = Instance.new('LocalScript', Fundo)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -467,8 +487,8 @@ local function WKBO_fake_script() -- Fundo.LocalScript
 		end
 	end)
 end
-coroutine.wrap(WKBO_fake_script)()
-local function IKAK_fake_script() -- FundoGames.LocalScript 
+coroutine.wrap(OZQDS_fake_script)()
+local function XUYNTWY_fake_script() -- FundoGames.LocalScript 
 	local script = Instance.new('LocalScript', FundoGames)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -511,4 +531,4 @@ local function IKAK_fake_script() -- FundoGames.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IKAK_fake_script)()
+coroutine.wrap(XUYNTWY_fake_script)()
