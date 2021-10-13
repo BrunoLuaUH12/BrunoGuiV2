@@ -26,26 +26,28 @@ local games = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
 local close = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
-local dex = Instance.new("TextButton")
+local darkdex = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
+local dex = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_13 = Instance.new("UICorner")
 local FundoGames = Instance.new("Frame")
 local gamesframe = Instance.new("Frame")
 local ScrollingFrame_2 = Instance.new("ScrollingFrame")
 local closegames = Instance.new("TextButton")
-local UICorner_13 = Instance.new("UICorner")
-local speedsimulator = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
-local HEROSinifinity = Instance.new("TextButton")
+local speedsimulator = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
-local IronManBattlegrounds = Instance.new("TextButton")
+local HEROSinifinity = Instance.new("TextButton")
 local UICorner_16 = Instance.new("UICorner")
-local RaysMod = Instance.new("TextButton")
+local IronManBattlegrounds = Instance.new("TextButton")
 local UICorner_17 = Instance.new("UICorner")
-local TextLabel_2 = Instance.new("TextLabel")
+local RaysMod = Instance.new("TextButton")
 local UICorner_18 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
 local UICorner_19 = Instance.new("UICorner")
+local UICorner_20 = Instance.new("UICorner")
 
 --Properties:
 
@@ -189,17 +191,29 @@ close.TextWrapped = true
 UICorner_10.CornerRadius = UDim.new(0, 15)
 UICorner_10.Parent = close
 
+darkdex.Name = "darkdex"
+darkdex.Parent = ScrollingFrame
+darkdex.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+darkdex.Position = UDim2.new(0.503842473, 0, 0.231687561, 0)
+darkdex.Size = UDim2.new(0, 93, 0, 46)
+darkdex.Font = Enum.Font.SciFi
+darkdex.Text = "DarkDexV3"
+darkdex.TextColor3 = Color3.fromRGB(0, 0, 0)
+darkdex.TextSize = 14.000
+
+UICorner_11.Parent = darkdex
+
 dex.Name = "dex"
 dex.Parent = ScrollingFrame
 dex.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-dex.Position = UDim2.new(0.503842473, 0, 0.231687561, 0)
+dex.Position = UDim2.new(0.0555666089, 0, 0.30027163, 0)
 dex.Size = UDim2.new(0, 93, 0, 46)
 dex.Font = Enum.Font.SciFi
-dex.Text = "Dex V.4"
+dex.Text = "DexV4"
 dex.TextColor3 = Color3.fromRGB(0, 0, 0)
 dex.TextSize = 14.000
 
-UICorner_11.Parent = dex
+UICorner_12.Parent = dex
 
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -214,8 +228,8 @@ TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
-UICorner_12.CornerRadius = UDim.new(0, 20)
-UICorner_12.Parent = Frame
+UICorner_13.CornerRadius = UDim.new(0, 20)
+UICorner_13.Parent = Frame
 
 FundoGames.Name = "FundoGames"
 FundoGames.Parent = BrunoGuiV2
@@ -252,8 +266,8 @@ closegames.TextScaled = true
 closegames.TextSize = 14.000
 closegames.TextWrapped = true
 
-UICorner_13.CornerRadius = UDim.new(0, 15)
-UICorner_13.Parent = closegames
+UICorner_14.CornerRadius = UDim.new(0, 15)
+UICorner_14.Parent = closegames
 
 speedsimulator.Name = "speedsimulator"
 speedsimulator.Parent = ScrollingFrame_2
@@ -267,7 +281,7 @@ speedsimulator.TextScaled = true
 speedsimulator.TextSize = 14.000
 speedsimulator.TextWrapped = true
 
-UICorner_14.Parent = speedsimulator
+UICorner_15.Parent = speedsimulator
 
 HEROSinifinity.Name = "HEROSinifinity"
 HEROSinifinity.Parent = ScrollingFrame_2
@@ -281,7 +295,7 @@ HEROSinifinity.TextScaled = true
 HEROSinifinity.TextSize = 14.000
 HEROSinifinity.TextWrapped = true
 
-UICorner_15.Parent = HEROSinifinity
+UICorner_16.Parent = HEROSinifinity
 
 IronManBattlegrounds.Name = "IronManBattlegrounds"
 IronManBattlegrounds.Parent = ScrollingFrame_2
@@ -295,7 +309,7 @@ IronManBattlegrounds.TextScaled = true
 IronManBattlegrounds.TextSize = 14.000
 IronManBattlegrounds.TextWrapped = true
 
-UICorner_16.Parent = IronManBattlegrounds
+UICorner_17.Parent = IronManBattlegrounds
 
 RaysMod.Name = "RaysMod"
 RaysMod.Parent = ScrollingFrame_2
@@ -309,7 +323,7 @@ RaysMod.TextScaled = true
 RaysMod.TextSize = 14.000
 RaysMod.TextWrapped = true
 
-UICorner_17.Parent = RaysMod
+UICorner_18.Parent = RaysMod
 
 TextLabel_2.Parent = gamesframe
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -322,15 +336,15 @@ TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
-UICorner_18.CornerRadius = UDim.new(0, 20)
-UICorner_18.Parent = gamesframe
+UICorner_19.CornerRadius = UDim.new(0, 20)
+UICorner_19.Parent = gamesframe
 
-UICorner_19.CornerRadius = UDim.new(0, 50)
-UICorner_19.Parent = FundoGames
+UICorner_20.CornerRadius = UDim.new(0, 50)
+UICorner_20.Parent = FundoGames
 
 -- Scripts:
 
-local function YOGKNA_fake_script() -- abrirFrame.LocalScript 
+local function ABGLF_fake_script() -- abrirFrame.LocalScript 
 	local script = Instance.new('LocalScript', abrirFrame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -373,8 +387,8 @@ local function YOGKNA_fake_script() -- abrirFrame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YOGKNA_fake_script)()
-local function KVKDILG_fake_script() -- BrunoGuiV2.LocalScript 
+coroutine.wrap(ABGLF_fake_script)()
+local function GRYNIR_fake_script() -- BrunoGuiV2.LocalScript 
 	local script = Instance.new('LocalScript', BrunoGuiV2)
 
 	-- Open and Close Principal
@@ -423,6 +437,10 @@ local function KVKDILG_fake_script() -- BrunoGuiV2.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
 	end)
 	
+	script.Parent.Fundo.Frame.ScrollingFrame.darkdex.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/BrunoLuaUH12/Scripts/main/DarkDexv3.lua", true))()
+	end)
+	
 	script.Parent.Fundo.Frame.ScrollingFrame.dex.MouseButton1Click:Connect(function()
 		loadstring(game:GetObjects("rbxassetid://418957341")[1].Source)()
 	end)
@@ -443,8 +461,8 @@ local function KVKDILG_fake_script() -- BrunoGuiV2.LocalScript
 		loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
 	end)
 end
-coroutine.wrap(KVKDILG_fake_script)()
-local function OZQDS_fake_script() -- Fundo.LocalScript 
+coroutine.wrap(GRYNIR_fake_script)()
+local function NDZHQL_fake_script() -- Fundo.LocalScript 
 	local script = Instance.new('LocalScript', Fundo)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -487,8 +505,8 @@ local function OZQDS_fake_script() -- Fundo.LocalScript
 		end
 	end)
 end
-coroutine.wrap(OZQDS_fake_script)()
-local function XUYNTWY_fake_script() -- FundoGames.LocalScript 
+coroutine.wrap(NDZHQL_fake_script)()
+local function NOLYBLT_fake_script() -- FundoGames.LocalScript 
 	local script = Instance.new('LocalScript', FundoGames)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -531,4 +549,4 @@ local function XUYNTWY_fake_script() -- FundoGames.LocalScript
 		end
 	end)
 end
-coroutine.wrap(XUYNTWY_fake_script)()
+coroutine.wrap(NOLYBLT_fake_script)()
